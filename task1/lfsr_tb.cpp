@@ -40,9 +40,9 @@ int main(int argc, char **argv, char **env) {
     
     top->rst = 0;
     top->en = vbdFlag();
-    vbdSetMode(1);
+    //vbdSetMode(1);
     
-    vbdHex(1, top->data_out & 0xF);
+    vbdHex(1, top->data_out);
     vbdBar(top->data_out & 0xFF);
      
     vbdCycle(simcyc+1);

@@ -11,7 +11,7 @@ always_ff @ (posedge clk, posedge rst)
     if (rst)
         sreg <= 7'b1;
     else if (en)
-        sreg <= {sreg[6:1], sreg[7] ^ sreg[3]}; //make a note of why 6:1 //lecture 4 slide 14
+        sreg <= {sreg[6:1], sreg[7] ^ sreg[3]}; 
 
 assign data_out = sreg;
 endmodule
