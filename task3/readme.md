@@ -16,6 +16,10 @@ The module is designed so that clktick generates a 1 (tick signal) every N+1 cyc
 # Test Yourself Challenge #
 In this challenge I had to combine the clktick.sv module (flexible timer) with f1_fsm.sv (the F1 lights finite state machine that turns a LED on one-by-one until all 8 are turned on and then they all turn off).
 
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/69715492/200007790-a1e2286d-3c48-4de9-befe-26bb02f744a5.png">
+
+The output of the flexible timer is the enable input of the finite state machine. Everytime the timer generates a tick signal, the finite state machine goes to its next state. Thus we can use the flexible timer to control the delay between each state transition.
+
 To achieve this I had to:
 * Create a top-level module which combines the clktick with f1_fsm
 * Create a testbench for driving the inputs and displaying
@@ -23,3 +27,4 @@ To achieve this I had to:
 ## Top-Level Module ##
 ## Testbench Function ##
 ## Final Results ##
+It is difficult to show the final product in images, however, setting the rotary encoder to 24 meant the vbdValue() = N = 24. This meant there was a delay of 24 cycles between consecutive ticks which equates to a second in real time. 
