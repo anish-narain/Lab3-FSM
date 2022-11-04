@@ -27,4 +27,9 @@ To achieve this I had to:
 ## Top-Level Module ##
 ## Testbench Function ##
 ## Final Results ##
-It is difficult to show the final product in images, however, setting the rotary encoder to 24 meant the vbdValue() = N = 24. This meant there was a delay of 24 cycles between consecutive ticks which equates to a second in real time. 
+It is difficult to show the final product in images, however, setting the rotary encoder to 24 meant the vbdValue() = N = 24. This meant there was a delay of 24 cycles between consecutive ticks which equates to a second in real time. Hence the f1 state machine changes state every second. 
+
+Rotating the encoder changes the vbdValue() thus changing the delay between state transitions.
+
+* Increasing the vbdValue() increased the number of cycles between subsequent ticks from the flexible timer, making the f1 sequence more delayed.
+* Decreasing the vbdValue() decreased the number of cycles, making the f1 sequence occur more quickly.
