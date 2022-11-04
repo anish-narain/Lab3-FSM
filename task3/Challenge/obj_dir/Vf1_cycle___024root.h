@@ -20,9 +20,9 @@ class Vf1_cycle___024root final : public VerilatedModule {
     CData/*0:0*/ f1_cycle__DOT__tick;
     CData/*0:0*/ __Vclklast__TOP__clk;
     VL_IN16(N,15,0);
-    SData/*15:0*/ f1_cycle__DOT__clktick__DOT__count;
-    IData/*31:0*/ f1_cycle__DOT__f1_cycle__DOT__current_state;
-    IData/*31:0*/ f1_cycle__DOT__f1_cycle__DOT__next_state;
+    SData/*15:0*/ f1_cycle__DOT__clktick_instance__DOT__count;
+    IData/*31:0*/ f1_cycle__DOT__f1_fsm_instance__DOT__current_state;
+    IData/*31:0*/ f1_cycle__DOT__f1_fsm_instance__DOT__next_state;
     VlUnpacked<CData/*0:0*/, 2> __Vm_traceActivity;
 
     // INTERNAL VARIABLES

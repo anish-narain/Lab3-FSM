@@ -25,66 +25,66 @@ void Vf1_cycle___024root__trace_chg_sub_0(Vf1_cycle___024root* vlSelf, Verilated
     // Body
     if (VL_UNLIKELY(vlSelf->__Vm_traceActivity[1U])) {
         bufp->chgBit(oldp+0,(vlSelf->f1_cycle__DOT__tick));
-        bufp->chgSData(oldp+1,(vlSelf->f1_cycle__DOT__clktick__DOT__count),16);
-        bufp->chgCData(oldp+2,((((((((((0U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state) 
-                                       | (1U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)) 
-                                      | (2U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)) 
-                                     | (3U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)) 
-                                    | (4U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)) 
-                                   | (5U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)) 
-                                  | (6U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)) 
-                                 | (7U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state))
-                                 ? ((0U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)
-                                     ? 0U : ((1U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)
+        bufp->chgSData(oldp+1,(vlSelf->f1_cycle__DOT__clktick_instance__DOT__count),16);
+        bufp->chgCData(oldp+2,((((((((((0U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state) 
+                                       | (1U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)) 
+                                      | (2U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)) 
+                                     | (3U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)) 
+                                    | (4U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)) 
+                                   | (5U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)) 
+                                  | (6U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)) 
+                                 | (7U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state))
+                                 ? ((0U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)
+                                     ? 0U : ((1U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)
                                               ? 1U : 
-                                             ((2U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)
+                                             ((2U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)
                                                ? 3U
                                                : ((3U 
-                                                   == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)
+                                                   == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)
                                                    ? 7U
                                                    : 
                                                   ((4U 
-                                                    == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)
+                                                    == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)
                                                     ? 0xfU
                                                     : 
                                                    ((5U 
-                                                     == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)
+                                                     == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)
                                                      ? 0x1fU
                                                      : 
                                                     ((6U 
-                                                      == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)
+                                                      == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)
                                                       ? 0x3fU
                                                       : 0x7fU)))))))
-                                 : ((8U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)
+                                 : ((8U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)
                                      ? 0xffU : 0U))),8);
-        bufp->chgIData(oldp+3,(vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state),32);
-        bufp->chgIData(oldp+4,((((((((((0U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state) 
-                                       | (1U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)) 
-                                      | (2U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)) 
-                                     | (3U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)) 
-                                    | (4U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)) 
-                                   | (5U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)) 
-                                  | (6U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)) 
-                                 | (7U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state))
-                                 ? ((0U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)
-                                     ? 1U : ((1U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)
+        bufp->chgIData(oldp+3,(vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state),32);
+        bufp->chgIData(oldp+4,((((((((((0U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state) 
+                                       | (1U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)) 
+                                      | (2U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)) 
+                                     | (3U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)) 
+                                    | (4U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)) 
+                                   | (5U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)) 
+                                  | (6U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)) 
+                                 | (7U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state))
+                                 ? ((0U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)
+                                     ? 1U : ((1U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)
                                               ? 2U : 
-                                             ((2U == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)
+                                             ((2U == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)
                                                ? 3U
                                                : ((3U 
-                                                   == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)
+                                                   == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)
                                                    ? 4U
                                                    : 
                                                   ((4U 
-                                                    == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)
+                                                    == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)
                                                     ? 5U
                                                     : 
                                                    ((5U 
-                                                     == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)
+                                                     == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)
                                                      ? 6U
                                                      : 
                                                     ((6U 
-                                                      == vlSelf->f1_cycle__DOT__f1_cycle__DOT__current_state)
+                                                      == vlSelf->f1_cycle__DOT__f1_fsm_instance__DOT__current_state)
                                                       ? 7U
                                                       : 8U)))))))
                                  : 0U)),32);

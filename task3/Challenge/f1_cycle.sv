@@ -10,7 +10,7 @@ module f1_cycle #(
 
 logic tick;
 
-clktick clktick (
+clktick clktick_instance (
     .clk (clk),
     .rst (rst),
     .en (en),
@@ -18,7 +18,7 @@ clktick clktick (
     .tick (tick)
 );
 
-f1_fsm f1_cycle (
+f1_fsm f1_fsm_instance (
     .clk (clk),
     .rst (rst),
     .en (tick),
