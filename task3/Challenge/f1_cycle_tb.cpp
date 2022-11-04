@@ -1,6 +1,6 @@
 #include "verilated.h"
 #include "verilated_vcd_c.h"
-#include "Vclktick.h"
+#include "Vf1_cycle.h"
 
 #include "vbuddy.cpp"     // include vbuddy code
 #define MAX_SIM_CYC 100000
@@ -12,7 +12,7 @@ int main(int argc, char **argv, char **env) {
 
   Verilated::commandArgs(argc, argv);
   // init top verilog instance
-  Vclktick * top = new Vclktick;
+  Vf1_cycle * top = new Vf1_cycle;
   // init trace dump
   Verilated::traceEverOn(true);
   VerilatedVcdC* tfp = new VerilatedVcdC;
@@ -40,7 +40,7 @@ int main(int argc, char **argv, char **env) {
     }
 
     // Display toggle neopixel
-    vbdBar(top->data_,out & 0xFF);
+    vbdBar(top->out & 0xFF);
 
     // set up input signals of testbench
     top->rst = (simcyc < 2);    // assert reset for 1st cycle

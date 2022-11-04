@@ -1,28 +1,28 @@
-module f1_cycles #(
+module f1_cycle #(
     parameter WIDTH = 16
 ) (
     input logic clk,
     input logic rst,
     input logic en,
     input logic [WIDTH-1:0] N,
-    output logic [7:0] data_out
+    output logic [7:0] out
 );
 
 logic tick;
 
-clktick clktick_instance (
+clktick clktick (
     .clk (clk),
     .rst (rst),
     .en (en),
-    .N (N)
+    .N (N),
     .tick (tick)
 );
 
-f1 f1_instance (
+f1_fsm f1_cycle (
     .clk (clk),
     .rst (rst),
     .en (tick),
-    .out (data_out)
+    .out (out)
 );
 
 endmodule

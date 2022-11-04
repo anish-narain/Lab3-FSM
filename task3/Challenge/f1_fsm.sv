@@ -1,4 +1,4 @@
-module f1(
+module f1_fsm (
     input logic         clk,
     input logic         rst,
     output logic [8:1]  out,
