@@ -8,7 +8,8 @@
 ## Step 1 ##
 Here I created the lfsr.sv. 
 
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/69715492/199845818-4a840dbb-a264-47bc-811d-d0d360bce572.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/69715492/200703384-a0b29c16-7cee-4d5f-928f-a3c6e2542c57.png">
+
 
 This creates the following module:
 
